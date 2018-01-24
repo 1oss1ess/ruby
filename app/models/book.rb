@@ -1,5 +1,5 @@
 class Book < ActiveRecord::Base
-    def self.all_genres ; %W[Science-fiction Drama Action-and-Adventure Romance Mystery Horror] ; end
+    def self.all_genres ; %w[Science-fiction Drama Action-and-Adventure Romance Mystery Horror] ; end
     validates :title, :presence => true
     validates :publish_date, :presence => true
     validate :published_1930_or_later
