@@ -38,8 +38,8 @@ group :development, :test do
   gem 'byebug'
 end
 
-goup :development do
-  gem 'sqlite3' # use SQLite only in development and testing
+group :development do
+  gem 'sqlite3'
 end
 
 group :development do
