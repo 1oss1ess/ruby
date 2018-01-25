@@ -36,8 +36,10 @@ ruby '2.3.0' # just in case - tell Heroku which Ruby version we nee
 
 group :development, :test do
   gem 'byebug'
+end
+
+goup :development do
   gem 'sqlite3' # use SQLite only in development and testing
-  
 end
 
 group :development do
