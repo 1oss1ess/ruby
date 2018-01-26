@@ -50,6 +50,16 @@ group :development do
   gem 'spring'
 end
 
+group :test do
+  gem 'cucumber-rails', :require => false
+  gem 'cucumber-rails-training-wheels'
+  gem 'database_cleaner'
+  gem 'capybara'
+  gem 'launchy'
+  gem 'rspec-rails'
+  gem 'factory_bot_rails'
+end
+
 group :production do
   gem 'pg' # use PostgreSQL in production (Heroku)
   gem 'rails_12factor' # Heroku-specific production settings
