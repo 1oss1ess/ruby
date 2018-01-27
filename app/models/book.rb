@@ -3,9 +3,7 @@ class Book < ActiveRecord::Base
     validates :title, :presence => true
     validates :publish_date, :presence => true
     validate :published_1930_or_later
-    validates :genre, :inclusion => {:in => Book.all_genres},
-        :unless => :grandfathered?
-        
+    
     def published_1930_or_later
         errors.add(:publish_date, 'must be 1930 ot later') if
             publish_date && publish_date < Date.parse('1 Jan 1930')
