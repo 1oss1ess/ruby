@@ -128,7 +128,7 @@ GEM
     multi_test (0.1.2)
     nokogiri (1.8.1)
       mini_portile2 (~> 2.3.0)
-    pg (0.21.0)
+    pg (0.20.0)
     public_suffix (3.0.1)
     rack (1.6.8)
     rack-test (0.6.3)
@@ -242,7 +242,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
-  pg (~> 0.15)
+  pg (~> 0.20.0)
   rails (= 4.2.6)
   rails_12factor
   rspec-rails
